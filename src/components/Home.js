@@ -47,13 +47,7 @@ const Home = () => {
   const handleChange = (date) => {
     startdate2 = date.toDateString();
     console.log("startdate handlechange ", startdate2);
-
-    // this.setState(
-    //   () => ({
-    //     startDate: date,
-    //   }),
-    //   () => {}
-    // );
+  
   };
 
   // ExampleCustomInput = ({ value, onClick }) => (
@@ -114,16 +108,16 @@ const Home = () => {
             dates. <br></br>Students can hand assessments in after a break,
             instead of in the middle of a break
           </div>
-        </div>{" "}
+        </div>
       </div>
-
+  <div className='containerSub'>
       <Table2
         startDate={startdate2.toDateString()}
         ShowHolidays={ShowHolidays}
         CalculateHolidays={CalculateHolidays}
       ></Table2>
 
-      <div className='containerSub'>
+    
         <h3>Holiday Dates</h3>
 
         {GetHolidayData().map((item, index) => {

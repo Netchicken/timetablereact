@@ -10,59 +10,56 @@ import {
 //https://codesandbox.io/s/github/tannerlinsley/react-table/tree/master/examples/basic?file=/src/App.js:1844-1855
 //https://react-table.js.org/
 //https://react-table-v7.tanstack.com/docs/examples/basic
-  //this is used locally in the render
-  const ReactTable = ({ columns, data }) => {
-    // Use the state and functions returned from useTable to build your UI
-    // you can get the react table functions by using the hook useTable
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-      useTable(
-        {
-          columns,
-          data,
-        }
+//this is used locally in the render
+const ReactTable = ({ columns, data }) => {
+  // Use the state and functions returned from useTable to build your UI
+  // you can get the react table functions by using the hook useTable
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable(
+      {
+        columns,
+        data,
+      },
 
-        // hooks for resizing
-        // useFlexLayout,
-        //useResizeColumns
-      );
-    //https://medium.com/@blaiseiradukunda/react-table-7-tutorial-3d8ba6ac8b16 excellent tutorial
-    // Render the UI for your table
-    return (
-      <table {...getTableProps()}>
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => {
-                const { render, getHeaderProps } = column;
-                return <th {...getHeaderProps()}>{render("Header")}</th>;
+      // hooks for resizing
+      // useFlexLayout,
+      useResizeColumns
+    );
+  //https://medium.com/@blaiseiradukunda/react-table-7-tutorial-3d8ba6ac8b16 excellent tutorial
+  // Render the UI for your table
+  return (
+    <table {...getTableProps()}>
+      <thead>
+        {headerGroups.map((headerGroup) => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map((column) => {
+              const { render, getHeaderProps } = column;
+              return <th {...getHeaderProps()}>{render("Header")}</th>;
+            })}
+          </tr>
+
+          // <tr {...headerGroup.getHeaderGroupProps()}>
+          //   {headerGroup.headers.map((column) => (
+          //     <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+          //   ))}
+          // </tr>
+        ))}
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {rows.map((row, i) => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()}>
+              {row.cells.map((cell) => {
+                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
               })}
             </tr>
-
-            // <tr {...headerGroup.getHeaderGroupProps()}>
-            //   {headerGroup.headers.map((column) => (
-            //     <th {...column.getHeaderProps()}>{column.render("Header")}</th>
-            //   ))}
-            // </tr>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row, i) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  return (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    );
-  };
-
+          );
+        })}
+      </tbody>
+    </table>
+  );
+};
 
 const Table2 = (props) => {
   const Styles = styled.div`
@@ -117,10 +114,10 @@ const Table2 = (props) => {
             Header: "Module",
             accessor: "group",
           },
-          {
-            Header: "Unit",
-            accessor: "AssID",
-          },
+          // {
+          //   Header: "Unit",
+          //   accessor: "AssID",
+          // },
           {
             Header: "Assessment Name",
             accessor: "AssName",
@@ -159,6 +156,7 @@ const Table2 = (props) => {
       ),
     [props.startDate, props.ShowHolidays, props.CalculateHolidays] //this is where change is watched
   );
+
   console.log("Table2 data", data);
   console.log("Table2 columns", columns);
   return (
