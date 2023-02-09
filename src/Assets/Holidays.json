@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "June",
+    "startDate": "01-06-2023",
+    "days": 14,
+    "daysbreak": []
+  },
+  {
+    "id": 2,
+    "name": "July",
+    "startDate": "04-07-2023",
+    "days": 14,
+    "daysbreak": []
+  },
+  {
+    "id": 3,
+    "name": "September",
+    "startDate": "26-09-2023",
+    "days": 14,
+    "daysbreak": []
+  },
+  {
+    "id": 4,
+    "name": "December",
+    "startDate": "16-12-2023",
+    "days": 35,
+    "daysbreak": []
+  }
+]
