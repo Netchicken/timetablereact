@@ -80,15 +80,6 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 650px) {
-  h1 {
-    font-size: 20px;
-    order: 1;
-    margin: 0;
-    max-width: 100%;
-  }
-}
-
 /* .react-datepicker {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 0.8rem !important;
@@ -128,5 +119,26 @@ h1 {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 20px;
+    order: 1;
+    margin: 0;
+    max-width: 100%;
+  }
+  .containerSub {
+    border-radius: 8px;
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
