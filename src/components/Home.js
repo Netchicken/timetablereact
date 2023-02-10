@@ -5,11 +5,7 @@ import "../App.css";
 import { LoadStartDate } from "../components/Dates";
 // import DatePicker from "react-datepicker";
 
-import {
-  loadAssessmentsFile,
-  GenerateHolidayDates,
-  GetHolidayData,
-} from "../components/Dates";
+import { GetHolidayData } from "../components/Dates";
 import moment from "moment";
 import Toggle from "react-toggle";
 import "react-toggle/style.css";
@@ -18,6 +14,7 @@ const Home = () => {
   const [CalculateHolidays, setCalculateHolidays] = useState(false);
   const [ShowHolidays, setShowHolidays] = useState(false);
   const [startdate2, setStartdate2] = useState(new Date());
+  const [midFull, setMidFull] = useState("full");
 
   const handleCalendarClose = () => {
     console.log("Calendar closed", startdate2);
@@ -38,6 +35,7 @@ const Home = () => {
   //Radio button change
   const onOptionChange = (e) => {
     var date = LoadStartDate(e.target.value);
+    setMidFull(e.target.value);
     setStartdate2(new Date(date));
     console.log("Start date onChange", e.target.value);
     console.log("startdate onOptionChange ", startdate2);
@@ -93,6 +91,7 @@ const Home = () => {
             startDate={startdate2.toDateString()}
             ShowHolidays={ShowHolidays}
             CalculateHolidays={CalculateHolidays}
+            MidFull={midFull}
           ></Table2>
 
           <h3 style={{ color: "white" }}>Holiday Dates</h3>

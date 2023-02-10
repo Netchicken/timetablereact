@@ -1,4 +1,5 @@
 import assessemnts from "../Assets/Assessments.json";
+import assessemntsMid from "../Assets/Assessmentsmid.json";
 import collegeHolidays from "../Assets/Holidays.json";
 import moment from "moment";
 //https://www.sitepoint.com/managing-dates-times-using-moment-js/
@@ -24,9 +25,16 @@ export function LoadStartDate(selection) {
 export function loadAssessmentsFile(
   startDate,
   ShowHolidays,
-  CalculateHolidays
+  CalculateHolidays,
+  MidFull
 ) {
-  const assessmentData = assessemnts; //load from file
+  var assessmentData = "";
+  if (MidFull === "mid") {
+    assessmentData = assessemntsMid; //load from file
+  } else {
+    assessmentData = assessemnts; //load from file
+  }
+
   const holidaysData = collegeHolidays; //load from file
 
   var addDaysAfterBreak = 0; //must be global

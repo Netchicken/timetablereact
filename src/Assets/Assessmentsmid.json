@@ -1,0 +1,72 @@
+[
+  {
+    "id": 11,
+    "group": "605",
+    "AssID": "",
+    "AssName": "Software Testing and Security- Assessment 1",
+    "DueDate": "",
+    "passed": false,
+    "days": 21,
+    "holiday": ""
+  },
+  {
+    "id": 12,
+    "group": "605",
+    "AssID": "",
+    "AssName": "Software Testing and Security- Assessment 2",
+    "DueDate": "",
+    "passed": false,
+    "days": 28,
+    "holiday": ""
+  },
+  {
+    "id": 13,
+    "group": "606",
+    "AssID": "",
+    "AssName": "Project Management Assessment 1",
+    "DueDate": "",
+    "passed": false,
+    "days": 63,
+    "holiday": ""
+  },
+  {
+    "id": 14,
+    "group": "606",
+    "AssID": "",
+    "AssName": "Project Management Assessment 2",
+    "DueDate": "",
+    "passed": false,
+    "days": 70,
+    "holiday": ""
+  },
+  {
+    "id": 15,
+    "group": "607",
+    "AssID": "",
+    "AssName": "Project 2 Assessment 1",
+    "DueDate": "",
+    "passed": false,
+    "days": 91,
+    "holiday": ""
+  },
+  {
+    "id": 16,
+    "group": "607",
+    "AssID": "",
+    "AssName": "Project 2 Assessment 2",
+    "DueDate": "",
+    "passed": false,
+    "days": 126,
+    "holiday": ""
+  },
+  {
+    "id": 17,
+    "group": "607",
+    "AssID": "",
+    "AssName": "Project 2 Assessment 3",
+    "DueDate": "",
+    "passed": false,
+    "days": 126,
+    "holiday": ""
+  }
+]

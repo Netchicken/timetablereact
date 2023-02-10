@@ -60,7 +60,7 @@ const ReactTable = ({ columns, data }) => {
     </table>
   );
 };
-
+//css
 const Table2 = (props) => {
   const Styles = styled.div`
     padding: 1rem;
@@ -152,7 +152,8 @@ const Table2 = (props) => {
       loadAssessmentsFile(
         props.startDate,
         props.ShowHolidays,
-        props.CalculateHolidays
+        props.CalculateHolidays,
+        props.MidFull
       ),
     [props.startDate, props.ShowHolidays, props.CalculateHolidays] //this is where change is watched
   );
@@ -168,56 +169,3 @@ const Table2 = (props) => {
 
 export default Table2;
 
-//Moment(this.state.date, "DD-MM-YY").add(1, "d")
-
-// function GenerateHolidayDates() {
-//   const holidays = collegeHolidays;
-
-//   //push all the days that are a break to daysbreak array
-//   const allHolidays = holidays.map(item => {
-//     var holidayStartDate = new Date(moment(item.startDate, "DD-MM-YYYY")); //turn the date string to a date
-//     //loop through the days and add 1
-//     var i = 1;
-//     for (i = 0; i < item.days; i++) {
-//       var singledate = new Date(
-//         moment(holidayStartDate, "DD-MM-YY").add(i, "d")
-//       );
-//       //holidayStartDate.setDate(holidayStartDate.getDate() + i)
-//       //);
-//       item.daysbreak.push(singledate.toDateString()); //add dates to the array
-//       console.log(
-//         "day count " + item.daysbreak.length,
-//         item.daysbreak.toString()
-//       );
-//     }
-//   });
-//   return allHolidays;
-// }
-
-// function loadAssessmentsFile(startDate) {
-//   const data = assessemnts;
-
-//   console.log("AFile dateStart in", startDate);
-//   var date = new Date(startDate);
-
-//   const options = {
-//     weekday: "long",
-//     year: "numeric",
-//     month: "long",
-//     day: "numeric"
-//   };
-//   const AssWithDates = data.map(item => {
-//     //  console.log("in", data.DueDate + " " + data.days);
-//     var newdate = new Date(date.setDate(date.getDate() + item.days));
-//     item.DueDate = newdate.toLocaleDateString(undefined, options);
-//     console.log("out", item.DueDate);
-//     return item;
-//   });
-
-//   GenerateHolidayDates().map(item => {
-//     console.log(item);
-//     //return item;
-//   });
-
-//   return AssWithDates;
-// }
