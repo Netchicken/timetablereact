@@ -53,7 +53,7 @@ const Home = () => {
       <div className='containerSub'>
         <div className='row'>
           <div className='column'>
-            1. Select Your Start Date
+            <h3> Select Your Start Date</h3>
             <div>
               <input
                 type='radio'
@@ -70,47 +70,47 @@ const Home = () => {
               />
               Mid Year
             </div>
-            <label htmlFor='cheese-status'>
+            {/* <label htmlFor='cheese-status'>
               2. Calculate effect of Holidays
             </label>
             <Toggle
               defaultChecked={CalculateHolidays}
               onChange={CalculateHolidaysChange}
             />
-            <h3>
-              Course Start Date:
-              {moment(startdate2).format("dddd, MMMM Do YYYY")}
-            </h3>
+             */}
           </div>
 
           <div className='column'>
-            Calculate your assessment due dates with this simple app.<br></br>{" "}
-            Choose your Startdate. The generated Assessment Dates don't include
-            school holidays. <br></br>Click on Include holidays to see altered
-            dates. <br></br>Students can hand assessments in after a break,
-            instead of in the middle of a break
+            <h3>
+              Course Start Date: <br></br>
+              {moment(startdate2).format("dddd, MMMM Do YYYY")}
+            </h3>
           </div>
         </div>
-      </div>
-      <div className='containerSub'>
-        <Table2
-          startDate={startdate2.toDateString()}
-          ShowHolidays={ShowHolidays}
-          CalculateHolidays={CalculateHolidays}
-        ></Table2>
 
-        <h3>Holiday Dates</h3>
+        <div className='row' style={{ color: "black" }}>
+          <Table2
+            startDate={startdate2.toDateString()}
+            ShowHolidays={ShowHolidays}
+            CalculateHolidays={CalculateHolidays}
+          ></Table2>
 
-        {GetHolidayData().map((item, index) => {
-          return (
-            <ul className='list-group list-group-flush'>
-              <li key={item.name}>
-                {item.name} {}
-                {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
-              </li>
-            </ul>
-          );
-        })}
+          <h3 style={{ color: "white" }}>Holiday Dates</h3>
+
+          {GetHolidayData().map((item, index) => {
+            return (
+              <ul
+                className='list-group list-group-flush'
+                style={{ color: "white" }}
+              >
+                <li key={item.name}>
+                  {item.name} {}
+                  {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
+                </li>
+              </ul>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

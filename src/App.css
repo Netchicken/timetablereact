@@ -4,9 +4,12 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-color: #dee6ec;
-  /* text-align: center; */
+ /* background-color: #dee6ec;
+   text-align: center; */
   /* height: 100% !important; */
+ 
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1124%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1125)'%3e%3c/rect%3e%3cpath d='M581.2716852391458 415.8071168529621L549.105374618952 336.19270431401554 445.76691112062906 424.2493765137795z' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M244.903%2c193.093C260.678%2c193%2c276.465%2c188.272%2c285.258%2c175.175C295.141%2c160.455%2c298.812%2c141.223%2c290.095%2c125.784C281.26%2c110.136%2c262.823%2c102.354%2c244.903%2c103.699C228.972%2c104.895%2c218.046%2c117.923%2c210.11%2c131.788C202.242%2c145.534%2c195.899%2c161.881%2c203.716%2c175.655C211.603%2c189.552%2c228.924%2c193.187%2c244.903%2c193.093' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1188.597%2c393.479C1243.887%2c395.608%2c1304.615%2c388.607%2c1334.731%2c342.19C1366.955%2c292.524%2c1358.129%2c228.295%2c1329.336%2c176.564C1299.644%2c123.218%2c1249.631%2c81.121%2c1188.597%2c79.637C1125.202%2c78.095%2c1064.172%2c112.866%2c1035.479%2c169.417C1008.939%2c221.724%2c1027.642%2c283.213%2c1060.736%2c331.64C1089.365%2c373.534%2c1137.893%2c391.527%2c1188.597%2c393.479' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M426.501%2c725.735C470.973%2c723.155%2c505.37%2c692.536%2c529.047%2c654.802C554.788%2c613.78%2c576.336%2c564.921%2c554.551%2c521.668C531.062%2c475.031%2c478.641%2c448.351%2c426.501%2c451.199C378.444%2c453.824%2c344.689%2c492.788%2c320.586%2c534.447C296.431%2c576.195%2c277.682%2c625.834%2c301.045%2c668.03C324.943%2c711.191%2c377.249%2c728.592%2c426.501%2c725.735' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M954.552%2c318.184C1001.114%2c317.51%2c1050.968%2c308.119%2c1074.924%2c268.186C1099.413%2c227.364%2c1088.791%2c176.145%2c1064.223%2c135.371C1040.53%2c96.049%2c1000.418%2c70.374%2c954.552%2c68.41C904.814%2c66.281%2c853.62%2c82.962%2c827.314%2c125.228C799.652%2c169.674%2c799.171%2c228.056%2c827.99%2c271.76C854.503%2c311.967%2c906.395%2c318.881%2c954.552%2c318.184' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M402.148%2c330.751C429.333%2c330.244%2c454.056%2c316.102%2c468.141%2c292.844C482.781%2c268.669%2c486.61%2c238.608%2c472.922%2c213.882C458.834%2c188.433%2c431.236%2c173.516%2c402.148%2c173.634C373.263%2c173.751%2c346.816%2c189.444%2c332.358%2c214.45C317.884%2c239.484%2c316.872%2c270.592%2c331.751%2c295.387C346.233%2c319.521%2c374.007%2c331.276%2c402.148%2c330.751' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M790.5889007504444 311.1225059322262L887.4564202437458 323.0163417789648 899.3502560904843 226.1488222856634 802.482736597183 214.25498643892485z' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M711.576%2c142.002C740.516%2c141.534%2c769.031%2c132.403%2c785.334%2c108.487C803.994%2c81.114%2c814.502%2c44.715%2c797.121%2c16.513C780.266%2c-10.836%2c743.684%2c-12.283%2c711.576%2c-11.196C681.943%2c-10.193%2c651.465%2c-3.005%2c635.505%2c21.983C618.394%2c48.774%2c616.549%2c84.091%2c633.567%2c110.941C649.626%2c136.278%2c681.582%2c142.487%2c711.576%2c142.002' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1050.1034393266807 321.13296268134553L992.8255634906609 361.2393631143663 1081.624102058202 427.10297665188546z' fill='rgba(28%2c 83%2c 142%2c 0.66)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1124'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1125'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(37%2c 131%2c 112%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+
 }
 
 .container {
@@ -17,18 +20,19 @@ body {
 }
 .containerSub {
   border-radius: 8px;
+   color: #eee;
   margin-top: 0px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   max-width: 100%;
   height: auto;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
   /* padding: 10px; */
-  background: rgb(247, 235, 235);
+  /* background: rgb(247, 235, 235); */
 }
 
 .header {
@@ -65,10 +69,10 @@ h4 {
 h1 {
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: 20;
   padding: 0;
   /* font-family: "Titan One", cursive; */
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   align-content: center;
   justify-content: center;

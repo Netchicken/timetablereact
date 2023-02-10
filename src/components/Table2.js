@@ -127,10 +127,10 @@ const Table2 = (props) => {
             Header: "Assessment Due",
             accessor: "DueDate",
           },
-          {
-            Header: "Break",
-            accessor: "holiday",
-          },
+          // {
+          //   Header: "Break",
+          //   accessor: "holiday",
+          // },
           // ,
           // {
           //   Header: "days",
