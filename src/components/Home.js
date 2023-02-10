@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Table2 from "./Table2";
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 import "../App.css";
 import { LoadStartDate } from "../components/Dates";
 // import DatePicker from "react-datepicker";
 
 import { GetHolidayData } from "../components/Dates";
 import moment from "moment";
-import Toggle from "react-toggle";
-import "react-toggle/style.css";
+// import Toggle from "react-toggle";
+// import "react-toggle/style.css";
 
 const Home = () => {
   const [CalculateHolidays, setCalculateHolidays] = useState(false);
