@@ -3,6 +3,24 @@ import collegeHolidays from "../Assets/Holidays.json";
 import moment from "moment";
 //https://www.sitepoint.com/managing-dates-times-using-moment-js/
 
+export function LoadStartDate(selection) {
+  var startDate = "";
+  // console.log("date.js LoadStartDate", selection);
+  switch (selection) {
+    case "full":
+      startDate = "2023-03-06";
+      break;
+    case "mid":
+      startDate = "2023-02-27";
+      break;
+
+    default:
+      startDate = "";
+  }
+  console.log("date.js LoadStartDate", startDate);
+  return startDate;
+}
+
 export function loadAssessmentsFile(
   startDate,
   ShowHolidays,
@@ -61,7 +79,6 @@ function HolidayMap(
   var allHolidays = GenerateHolidayDates(holidaysData);
 
   AssWithDates.map((item) => {
-    
     allHolidays.map((item2) => {
       //console.log("date match assess date ", newdate);
 

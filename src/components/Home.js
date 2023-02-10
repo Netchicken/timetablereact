@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Table2 from "./Table2";
 import "react-datepicker/dist/react-datepicker.css";
 import "../App.css";
-import DatePicker from "react-datepicker";
+import { LoadStartDate } from "../components/Dates";
+// import DatePicker from "react-datepicker";
 
 import {
   loadAssessmentsFile,
@@ -16,8 +17,7 @@ import "react-toggle/style.css";
 const Home = () => {
   const [CalculateHolidays, setCalculateHolidays] = useState(false);
   const [ShowHolidays, setShowHolidays] = useState(false);
-
-  var startdate2 = new Date();
+  const [startdate2, setStartdate2] = useState(new Date());
 
   const handleCalendarClose = () => {
     console.log("Calendar closed", startdate2);
@@ -25,36 +25,23 @@ const Home = () => {
 
   const handleCalendarOpen = () => console.log("Calendar opened");
 
-  const ShowHolidaysChange = () => {
-    // setShowHolidays(() => ({
-    //   ShowHolidays: !ShowHolidays,
-    // }));
-
+  const ShowHolidaysChange = (event) => {
     setShowHolidays((prevState) => !prevState);
-
     console.log("ShowHolidays ", ShowHolidays);
   };
 
   const CalculateHolidaysChange = () => {
-    // setCalculateHolidays(() => ({
-    //   CalculateHolidays: !CalculateHolidays,
-    // }));
-
     setCalculateHolidays((prevState) => !prevState);
     console.log("Home.js CalculateHolidays ", CalculateHolidays);
   };
 
-  const handleChange = (date) => {
-    startdate2 = date.toDateString();
-    console.log("startdate handlechange ", startdate2);
-  
+  //Radio button change
+  const onOptionChange = (e) => {
+    var date = LoadStartDate(e.target.value);
+    setStartdate2(new Date(date));
+    console.log("Start date onChange", e.target.value);
+    console.log("startdate onOptionChange ", startdate2);
   };
-
-  // ExampleCustomInput = ({ value, onClick }) => (
-  //   <button className="datepickerFrontButton" onClick={onClick}>
-  //     {value}
-  //   </button>
-  // );
 
   return (
     <div className='container'>
@@ -63,31 +50,26 @@ const Home = () => {
           <h1>DSD Level 6 Software Development Assessment Dates</h1>
         </div>
       </header>
-
-      {/* <Toggle
-
-          defaultChecked={this.state.ShowHolidays}
-          onChange={this.ShowHolidaysChange}
-        />
-        <label htmlFor="cheese-status">Show Holidays</label> */}
       <div className='containerSub'>
         <div className='row'>
           <div className='column'>
             1. Select Your Start Date
-            <DatePicker
-              todayButton='Today'
-              selected={startdate2}
-              onChange={handleChange}
-              withPortal
-              peekNextMonth
-              showYearDropdown
-              showMonthDropdown
-              dropdownMode='select'
-              onCalendarClose={handleCalendarClose}
-              onCalendarOpen={handleCalendarOpen}
-              dateFormat='dd/MM/yyy'
-              // customInput={this.ExampleCustomInput}
-            />
+            <div>
+              <input
+                type='radio'
+                value='full'
+                name='startdate'
+                onChange={onOptionChange}
+              />
+              Full Year
+              <input
+                type='radio'
+                value='mid'
+                name='startdate'
+                onChange={onOptionChange}
+              />
+              Mid Year
+            </div>
             <label htmlFor='cheese-status'>
               2. Calculate effect of Holidays
             </label>
@@ -103,48 +85,33 @@ const Home = () => {
 
           <div className='column'>
             Calculate your assessment due dates with this simple app.<br></br>{" "}
-            Enter your Startdate. The generated Assessment Dates don't include
+            Choose your Startdate. The generated Assessment Dates don't include
             school holidays. <br></br>Click on Include holidays to see altered
             dates. <br></br>Students can hand assessments in after a break,
             instead of in the middle of a break
           </div>
         </div>
       </div>
-  <div className='containerSub'>
-      <Table2
-        startDate={startdate2.toDateString()}
-        ShowHolidays={ShowHolidays}
-        CalculateHolidays={CalculateHolidays}
-      ></Table2>
+      <div className='containerSub'>
+        <Table2
+          startDate={startdate2.toDateString()}
+          ShowHolidays={ShowHolidays}
+          CalculateHolidays={CalculateHolidays}
+        ></Table2>
 
-    
         <h3>Holiday Dates</h3>
 
         {GetHolidayData().map((item, index) => {
           return (
             <ul className='list-group list-group-flush'>
               <li key={item.name}>
-                {item.name}
-                {moment(item.startDate, "DD-MM-YY").format(
-                  "dddd, MMMM Do YYYY"
-                )}
+                {item.name} {}
+                {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
               </li>
             </ul>
           );
         })}
       </div>
-      {/* <h3>Each Holiday Dates</h3>
-
-        {GenerateHolidayDates().map((item, index) => {
-          return (
-            <ul className="list-group list-group-flush">
-              <li>
-                {item.daysbreak.length} Days - {item.name} <br></br>-{" "}
-                {item.daysbreak}
-              </li>
-            </ul>
-          );
-        })} */}
     </div>
   );
 };
