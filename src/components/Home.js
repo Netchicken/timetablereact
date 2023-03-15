@@ -94,12 +94,12 @@ const Home = () => {
             MidFull={midFull}
           ></Table2>
 
-          <h3 style={{ color: "white" }}>Holiday Dates</h3>
+          <h2 style={{ color: "white" }}>Holiday Dates</h2>
 
           {GetHolidayData().map((item, index) => {
             return (
               <div style={{ color: "white" }}>
-                <h5> {item.name}</h5>
+                <h3> {item.name}</h3>
                 {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
 
                 <p>{item.text}</p>
