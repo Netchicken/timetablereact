@@ -100,7 +100,7 @@ const Home = () => {
             return (
               <div style={{ color: "white" }}>
                 <h3> {item.name}</h3>
-                {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
+                {/* {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")} */}
 
                 <p>{item.text}</p>
               </div>
