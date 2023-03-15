@@ -98,17 +98,12 @@ const Home = () => {
 
           {GetHolidayData().map((item, index) => {
             return (
-              <ul
-                className='list-group list-group-flush'
-                style={{ color: "white" }}
-              >
-                <li key={item.name}>
-                  {item.name} { }
-                  {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
-                  { }
-                  {item.text}
-                </li>
-              </ul>
+              <div style={{ color: "white" }}>
+                <h5> {item.name}</h5>
+                {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
+
+                <p>{item.text}</p>
+              </div>
             );
           })}
         </div>
