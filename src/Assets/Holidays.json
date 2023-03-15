@@ -2,29 +2,33 @@
   {
     "id": 1,
     "name": "Term 1",
-    "startDate": "Friday 7 April to Sunday 23 April (includes Good Friday – 7 April, Easter Monday – 10 April and Easter Tuesday – 11 April (a school holiday))",
+    "startDate": "7-4-2023",
     "days": 14,
-    "daysbreak": []
+    "daysbreak": [],
+    "text": "Friday 7 April to Sunday 23 April (includes Good Friday – 7 April, Easter Monday – 10 April and Easter Tuesday – 11 April (a school holiday))"
   },
   {
     "id": 2,
     "name": "Term 2",
-    "startDate": "Saturday 1 July to Sunday 16 July (includes Matariki 14 July)",
+    "startDate": "1-7-2023",
     "days": 14,
-    "daysbreak": []
+    "daysbreak": [],
+    "text": "Saturday 1 July to Sunday 16 July (includes Matariki 14 July)"
   },
   {
     "id": 3,
     "name": "Term 3",
     "startDate": "Saturday 23 September to Sunday 8 October",
     "days": 14,
-    "daysbreak": []
+    "daysbreak": [],
+    "text": "Saturday 23 September to Sunday 8 October"
   },
   {
     "id": 4,
     "name": "Term 4",
     "startDate": "20-12-2023",
     "days": 35,
-    "daysbreak": []
+    "daysbreak": [],
+    "text": "Ahh ... Christmas"
   }
 ]
