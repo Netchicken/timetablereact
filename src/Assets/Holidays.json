@@ -2,21 +2,21 @@
   {
     "id": 1,
     "name": "Term 1",
-    "startDate": "07-04-2023",
+    "startDate": "Friday 7 April to Sunday 23 April (includes Good Friday – 7 April, Easter Monday – 10 April and Easter Tuesday – 11 April (a school holiday))",
     "days": 14,
     "daysbreak": []
   },
   {
     "id": 2,
     "name": "Term 2",
-    "startDate": "01-07-2023",
+    "startDate": "Saturday 1 July to Sunday 16 July (includes Matariki 14 July)",
     "days": 14,
     "daysbreak": []
   },
   {
     "id": 3,
     "name": "Term 3",
-    "startDate": "23-09-2023",
+    "startDate": "Saturday 23 September to Sunday 8 October",
     "days": 14,
     "daysbreak": []
   },
