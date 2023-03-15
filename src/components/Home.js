@@ -105,6 +105,7 @@ const Home = () => {
                 <li key={item.name}>
                   {item.name} { }
                   {moment(item.startDate, "DD-MM-YY").format("dddd, MMMM Do")}
+                  { }
                   {item.text}
                 </li>
               </ul>
