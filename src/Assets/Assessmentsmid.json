@@ -6,7 +6,7 @@
     "AssName": "Software Testing and Security- Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 21,
+    "days": 154,
     "holiday": ""
   },
   {
@@ -16,7 +16,7 @@
     "AssName": "Software Testing and Security- Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 28,
+    "days": 161,
     "holiday": ""
   },
   {
@@ -26,7 +26,7 @@
     "AssName": "Project Management Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 63,
+    "days": 182,
     "holiday": ""
   },
   {
@@ -36,7 +36,7 @@
     "AssName": "Project Management Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 70,
+    "days": 189,
     "holiday": ""
   },
   {
@@ -46,7 +46,7 @@
     "AssName": "Project 2 Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 91,
+    "days": 224,
     "holiday": ""
   },
   {
@@ -56,7 +56,7 @@
     "AssName": "Project 2 Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 126,
+    "days": 259,
     "holiday": ""
   },
   {
@@ -66,7 +66,7 @@
     "AssName": "Project 2 Assessment 3",
     "DueDate": "",
     "passed": false,
-    "days": 126,
+    "days": 259,
     "holiday": ""
   }
 ]
