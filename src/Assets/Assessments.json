@@ -16,7 +16,7 @@
     "AssName": "Software Development 2-Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 28,
+    "days": 21,
     "holiday": ""
   },
   {
@@ -26,7 +26,7 @@
     "AssName": "Cloud Based Systems and Support- Assessment 1  ",
     "DueDate": "",
     "passed": false,
-    "days": 42,
+    "days": 49,
     "daysmid": 20,
     "holiday": ""
   },
@@ -37,7 +37,7 @@
     "AssName": "Database Management Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 49,
+    "days": 56,
     "holiday": ""
   },
   {
@@ -47,7 +47,7 @@
     "AssName": "Database Management Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 56,
+    "days": 63,
     "holiday": ""
   },
   {
@@ -57,7 +57,7 @@
     "AssName": "Cloud Based Systems and Support- Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 70,
+    "days": 77,
     "holiday": ""
   },
   {
@@ -107,7 +107,7 @@
     "AssName": "Software Testing and Security- Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 238,
+    "days": 154,
     "holiday": ""
   },
   {
@@ -117,7 +117,7 @@
     "AssName": "Software Testing and Security- Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 245,
+    "days": 161,
     "holiday": ""
   },
   {
@@ -127,7 +127,7 @@
     "AssName": "Project Management Assessment 1",
     "DueDate": "",
     "passed": false,
-    "days": 161,
+    "days": 182,
     "holiday": ""
   },
   {
@@ -137,7 +137,7 @@
     "AssName": "Project Management Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 280,
+    "days": 189,
     "holiday": ""
   },
   {
@@ -157,7 +157,7 @@
     "AssName": "Project 2 Assessment 2",
     "DueDate": "",
     "passed": false,
-    "days": 343,
+    "days": 210,
     "holiday": ""
   },
   {
@@ -167,7 +167,7 @@
     "AssName": "Project 2 Assessment 3",
     "DueDate": "",
     "passed": false,
-    "days": 343,
+    "days": 245,
     "holiday": ""
   }
 ]
